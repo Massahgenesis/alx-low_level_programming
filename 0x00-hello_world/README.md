@@ -1,8 +1,9 @@
-. gcc -E $CFILE -o c
+0. gcc -E $CFILE -o c
 The script that runs a C file through the preprocessor and save the result into another file.
-. gcc -c $CFILE
+1. gcc -c $CFILE
 The script that compiles a C file but does not link.
-. gcc -S $CFILE
+2. gcc -S $CFILE
 The script that generates the assembly code of a C code and save it in an output file.
-. gcc $CFILE -o cisfun
+3. gcc $CFILE -o cisfun
 The script that compiles a C file and creates an executable named cisfun.
+4. The use of puts function.
