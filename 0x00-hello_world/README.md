@@ -7,3 +7,4 @@ The script that generates the assembly code of a C code and save it in an output
 3. gcc $CFILE -o cisfun
 The script that compiles a C file and creates an executable named cisfun.
 4. The use of puts function.
+5. The use of printf in the function.
