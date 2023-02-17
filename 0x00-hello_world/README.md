@@ -11,3 +11,4 @@ The script that compiles a C file and creates an executable named cisfun.
 6. The C program that prints the size of various types on the computer it is compiled and run on.
 7. gcc -S -masm=intel $CFILE
 The script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+8. The C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line.
