@@ -1,5 +1,6 @@
 #include <stdio.h>
-/**main -C program that prints line to the standard error
+/**
+*main -C program that prints line to the standard error
 *return:1(succes)
 */
 int main(void)
