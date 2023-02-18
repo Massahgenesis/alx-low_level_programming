@@ -4,31 +4,36 @@
 
 #include <time.h>
 
-/* more headers goes there */
+/**
 
-/* betty style doc for function main goes there */
+*main- Generates random numbers,declare + OR -
+
+* Return:1, if successful
+
+*/
 
 int main(void)
 
 {
 	int n;
+	/*code generate random number*/
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	
 	if (n > 0)
 	{
-	printf("n is positive\n");
+	printf("%d is positive\n",n);
 	}
 
 	if (n == 0)
 	{
-	printf("n is zero\n");
+	printf("%d is zero\n",n);
 	}
 
 	if (n < 0)
 	{
-	printf("n is negative");
+	printf("%d is negative",n);
 	}
 
 	return (0);
