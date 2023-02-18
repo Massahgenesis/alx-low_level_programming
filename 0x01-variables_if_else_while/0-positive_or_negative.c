@@ -1,40 +1,35 @@
-#include <stdio.h>
-
 #include <stdlib.h>
 
 #include <time.h>
 
+#include <stdio.h>
+
+/* more headers goes there */
 /**
-
-*main- Generates random numbers,declare + OR -
-
-* Return:1, if successful
-
-*/
+ * main - generates random numbers,delcares + OR -
+ *
+ * Return: 1, if succesful
+ */
 
 int main(void)
 
 {
 	int n;
-	/*code generate random number*/
 
+	/*code generates random number*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
 	{
-	printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 	}
-
-	if (n == 0)
-	{
-	printf("%d is zero\n",n);
-	}
-
 	if (n < 0)
 	{
-	printf("%d is negative",n);
+		printf("%d is negative\n", n);
 	}
-
+	if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
 	return (0);
 }
