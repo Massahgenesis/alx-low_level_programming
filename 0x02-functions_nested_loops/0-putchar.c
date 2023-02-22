@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+* main - A c program that prints a line with _putchar function
+* Return: 0 (success)
+*/
+
 int main(void){
 char school[10] = "_putchar";
 int i;
