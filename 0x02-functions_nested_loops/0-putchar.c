@@ -10,7 +10,7 @@ int main(void)
 char school[10] = "_putchar";
 int i;
 i = 0;
-while (i <= 8)
+while (i < 8)
 {
 _putchar(school[i]);
 i++;
