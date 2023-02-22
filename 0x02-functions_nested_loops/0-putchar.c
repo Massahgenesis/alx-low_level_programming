@@ -5,12 +5,13 @@
 * Return: 0 (success)
 */
 
-int main(void) 
+int main(void)
 {
 char school[8] = "_putchar";
 int i;
 i = 0;
-while (i <= 8) {
+while (i <= 8)
+{
 _putchar(school[i]);
 i++;
 }
