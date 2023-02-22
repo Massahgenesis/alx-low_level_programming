@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
-* void -keyword in c program specifies that the function doesn't return a value
-* print_alphabet - A c program that prints alphabets from a to z
+* print_alphabet - A c program that prints alphabet in lowercase
 */
 
 void print_alphabet(void)
