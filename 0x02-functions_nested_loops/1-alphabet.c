@@ -9,10 +9,10 @@ void print_alphabet(void)
 char alphabet[26] = "a-z";
 int i;
 i = 0;
-while (i <= 26)
+while (i < 26)
 {
 _putchar(alphabet[i]);
 i++;
 }
-_puctchar(10);
+_putchar(10);
 }
