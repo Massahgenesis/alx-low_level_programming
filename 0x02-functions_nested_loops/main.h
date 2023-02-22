@@ -7,4 +7,10 @@
 
 int _putchar(char c);
 
+/**
+* print_alphabet - A cprogram that prints alphabet
+*/
+
+void print_alphabet(void);
+
 #endif /* MAIN_H */

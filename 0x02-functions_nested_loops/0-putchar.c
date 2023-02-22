@@ -7,7 +7,7 @@
 
 int main(void)
 {
-char school[8] = "_putchar";
+char school[10] = "_putchar";
 int i;
 i = 0;
 while (i <= 8)
