@@ -3,7 +3,8 @@
 #include "main.h"
 
 /**
-* _islower - A c program that test for lowercase letter  
+*_islower - Function that test lowercase letter
+*c - A variable to hold our test letter
 */
 
 int _islower(int c)
