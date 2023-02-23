@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-*print_line - Function that prints line
+*print_line - Function that checks for uppercase character
 *@n: An integer
+*Return:0
 */
 
 void print_line(int n)
