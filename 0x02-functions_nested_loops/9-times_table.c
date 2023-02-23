@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*time_table - Function that prints the 9 times table, starting with 0
+*times_table - Function that prints the 9 times table, starting with 0
 *rone = row, cone = column, d = digit of current result
 *Return: times table
 */
@@ -14,7 +14,7 @@ for (r = 0; r <= 9; r++)
 _putchar('0');
 _putchar(',');
 _putchar(' ');
-for (c = 0; c <= 9; c++)
+for (c = 1; c <= 9; c++)
 {
 d = (r * c);
 if ((d / 10) > 0)
