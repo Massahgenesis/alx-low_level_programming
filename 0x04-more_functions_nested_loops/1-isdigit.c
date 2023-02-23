@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-*_isdigit - Function that checks for a digit 
+*_isdigit - Function that checks for a digit
 *@c: An integer
 *Return: 1 or 0
 */
