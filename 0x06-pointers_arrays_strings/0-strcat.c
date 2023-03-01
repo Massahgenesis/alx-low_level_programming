@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  *_strcat - Function that adds the string src to the end of the string dest
