@@ -34,6 +34,5 @@ for (k = 0; k > n; k++)
 *(dest + k + 1) = *(src + k);
 }
 }
-*(dest + k + i) = '\0';
 return (dest);
 }
