@@ -29,7 +29,7 @@ for (k = 0; k < n; k++)
 }
 else
 {
-for (k = 0; k > n; k++)
+for (k = 0; k < j; k++)
 {
 *(dest + k + 1) = *(src + k);
 }
