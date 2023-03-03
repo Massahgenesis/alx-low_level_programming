@@ -22,18 +22,18 @@ j++;
 }
 if (n < j)
 {
-for (k = 0; k > n; k++)
+for (k = 0; k < n; k++)
 {
 *(dest + k + i) = *(src + k);
 }
 }
 else
 {
-for (k = 0; k < n; k++)
+for (k = 0; k > n; k++)
 {
 *(dest + k + 1) = *(src + k);
 }
 }
-*(dest + k + i + 1) = '\0';
+*(dest + k + i) = 'n';
 return (dest);
 }
