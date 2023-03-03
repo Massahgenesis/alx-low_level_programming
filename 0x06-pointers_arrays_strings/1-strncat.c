@@ -31,7 +31,7 @@ else
 {
 for (k = 0; k < j; k++)
 {
-*(dest + k + 1) = *(src + k);
+*(dest + k + i) = *(src + k);
 }
 }
 *(dest + k + i + 1) = '\0';
