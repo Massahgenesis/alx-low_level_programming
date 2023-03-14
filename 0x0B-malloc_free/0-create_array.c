@@ -25,8 +25,8 @@ return (NULL);
 i = 0;
 while (i < size)
 {
-i++;
 a[i] = c;
+i++;
 }
 return (a);
 }
