@@ -26,7 +26,7 @@ for (j = 0; s2[j] != '\0'; j++)
 {
 len++;
 }
-s3 = malloc(sizeof(char) * len);
+s3 = malloc(sizeof(char) * (len + 1));
 if (s3 == NULL)
 {
 return (NULL);
