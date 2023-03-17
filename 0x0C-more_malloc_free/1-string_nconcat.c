@@ -44,6 +44,6 @@ for (j = 0; j < n; j++)
 str[i] = s2[j];
 i++;
 }
-str[lens1 + n + 1] = '\0';
+str[lens1 + n] = '\0';
 return (str);
 }
