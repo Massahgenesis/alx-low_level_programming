@@ -21,9 +21,9 @@ int _strlen(const char *s)
 
 /**
  * add_node - adds a node to the linked list
- * @head: pointer to head 
+ * @head: pointer to heaet
  * @str: The string
- * Return: number of nodes 
+ * Return: number of nodes
  */
 list_t *add_node(list_t **head, const char *str)
 {
