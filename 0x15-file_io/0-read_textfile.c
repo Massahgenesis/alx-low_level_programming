@@ -7,7 +7,7 @@
 /**
  *read_textfile - Function that reads a text file and prints it to the POSIX
  *@filename: The name of a fine
- *@lettres:The numbers of the letter to be printed
+ *@letters:The numbers of the letter to be printed
  *Return:0 or number
  */
 
