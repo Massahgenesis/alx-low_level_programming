@@ -14,26 +14,26 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fp;
-	ssize_t wr;
+	int len;
 
-	fp = open(filename, O_CREAT | O_WRONLY, 42);
-	if (fp > 0)
+	for (len = 0; text_content[len] != '\0'; len++)
 	{
-		return (1);
+	;
 	}
-	else
-	{
-		return (-1);
-	}
-	wr = write(*filename, text_content, fp);
 	if (filename == NULL)
 	{
 		return (-1);
 	}
+	fp = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (fp < 0)
+	{
+		return (-1);
+	}
+	write(fp, text_content, len);
 	if (text_content == NULL)
 	{
-		fp = open(filename, O_CREAT);
+		fp = open(filename, O_CREAT, S_IRUSR | S_IWUSR);
 	}
-	return (wr);
+	return (1);
 
 }
