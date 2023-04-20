@@ -4,19 +4,18 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "main.h"
-
 /**
- *create_file - Function that creates a file
- *@filename: The of file to be created
- *@text_content: The container of the text
- *Return: The file content
+ *append_text_to_file - Function that appends text at the end of a file
+ *@filename: The name of the file
+ *@text_content: The text container
+ * Return: The text appended
  */
-int create_file(const char *filename, char *text_content)
+int append_text_to_file(const char *filename, char *text_content)
 {
 	int fp;
 	int len;
 
-	fp = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
+	fp = open(filename, O_WRONLY | O_APPEND);
 	if (text_content != NULL)
 	{
 	for (len = 0; text_content[len] != '\0'; len++)
@@ -35,5 +34,4 @@ int create_file(const char *filename, char *text_content)
 	write(fp, text_content, len);
 	close(fp);
 	return (1);
-
 }
