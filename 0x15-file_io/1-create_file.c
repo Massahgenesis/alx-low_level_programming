@@ -34,6 +34,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		fp = open(filename, O_CREAT, S_IRUSR | S_IWUSR);
 	}
+	close(fp);
 	return (1);
 
 }
