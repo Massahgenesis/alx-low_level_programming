@@ -13,7 +13,7 @@ void print_binary(unsigned long int n)
 
 	int i;
 	int q = 0;
-	unsigned long int m = n
+	unsigned long int m = n;
 
 	while (m > 1)
 	{
