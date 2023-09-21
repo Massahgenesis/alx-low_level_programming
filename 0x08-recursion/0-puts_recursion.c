@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _puts_recursion - Function that prints a string.
@@ -7,10 +7,14 @@
  */
 void _puts_recursion(char *s){
 
-	int i;
-	
-	i = 1;
-	if ()
+	if (*s =='\0')
+	{
+		return;	
+
+	}
+	_putchar(*s);
+	s++;
+	_puts_recursion(s);
 
 }
 
