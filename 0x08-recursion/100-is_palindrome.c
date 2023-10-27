@@ -3,7 +3,7 @@
 /**
  * palindrome - Function that determines the palindrome.
  * @a: Function's parameter.
- * @z: Function's parameter.
+ * @y: Function's parameter.
  * Return: The palindrome.
  */
 
