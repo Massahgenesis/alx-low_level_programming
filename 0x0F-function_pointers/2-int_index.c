@@ -5,6 +5,7 @@
  * @array: The array
  * @size: The number of the elements
  * @cmp: Apointer to the function.
+ *
  * Return: Index of the first element.
  */
 
