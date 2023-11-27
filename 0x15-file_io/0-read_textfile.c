@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * read_txtfile - Function that reads a text file and prints it to the POSIX.
+ * read_textfile - Function that reads a text file and prints it to the POSIX.
  * @filename: A pointer to the name of the file.
  * @letters: The number of letters that should be read and print.
  *
@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	r = read(o, str, letters);
-	if(r == -1)
+	if (r == -1)
 	{
 		free(str);
 		return (0);
