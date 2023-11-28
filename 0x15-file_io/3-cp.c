@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	from = open(argv[1], O_RDONLY);
 	r = read(from, file_content, FIXED_SIZE);
-	to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	to = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error, can't read from %s\n", argv[1]);
