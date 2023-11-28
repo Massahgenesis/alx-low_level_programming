@@ -13,8 +13,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int o, w, len = 0;
 
-	o = open(filename, O_CREAT | O_WRONLY | O_TRUNC | S_IRUSR | S_IWUSR);
-
+	o = open(filename, O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 	if (text_content != NULL)
 	{
 		for (len = 0; text_content[len] != '\0'; len++)
@@ -22,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 			;
 		}
 	}
-	else if (text_content == NULL)
+	else if (filename == NULL)
 	{
 		return (-1);
 	}
@@ -32,6 +31,5 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	close(o);
-
 	return (1);
 }
